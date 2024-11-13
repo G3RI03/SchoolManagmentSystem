@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-stdlib-jdk7-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-test.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-stdlib-jdk8-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/jfoenix-0.0.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-reflect.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-stdlib-jdk7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-stdlib-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/mysql-connector-java-8.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-reflect-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-stdlib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-test-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/commons-codec-1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/kotlin-stdlib-jdk8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/jfoenix-0.0.0-SNAPSHOT-retrolambda.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

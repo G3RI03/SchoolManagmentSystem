@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="spring">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/spring/spring-expression-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/spring/spring-aop-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/spring/spring-context-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/spring/spring-core-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/spring/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/spring/spring-beans-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/spring/spring-jdbc-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javafx_school_management_system-master/lib/spring/spring-tx-5.2.3.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
