@@ -1,4 +1,0 @@
-
----
-
-By applying these steps, you will have addressed the findings from the Qodana report and ensured your project is clean, well-documented, and well-tested.
