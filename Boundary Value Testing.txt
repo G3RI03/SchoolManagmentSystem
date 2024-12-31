@@ -1,0 +1,57 @@
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import schoolmanagement.java.controllers.AddStudentController;
+import schoolmanagement.java.utils.Alerts;
+import schoolmanagement.java.utils.Validators;
+
+import static org.mockito.Mockito.*;
+
+class AddStudentControllerTest {
+
+    private AddStudentController controller;
+
+    @BeforeEach
+    void setUp() {
+        controller = new AddStudentController();
+        // Mock dependencies like Alerts and Validators to prevent real popups or validations.
+        Alerts.INSTANCE = mock(Alerts.class);
+        Validators.INSTANCE = mock(Validators.class);
+    }
+
+    @Test
+    void testBoundaryValuesForAmountField() {
+        // Test minimum valid amount
+        controller.amountField.setText("1");
+        controller.onSave();
+        verifyNoInteractions(Alerts.INSTANCE);
+
+        // Test maximum valid amount
+        controller.amountField.setText("200000");
+        controller.onSave();
+        verifyNoInteractions(Alerts.INSTANCE);
+
+        // Test exceeding maximum amount
+        controller.amountField.setText("200001");
+        controller.onSave();
+        verify(Alerts.INSTANCE).jfxAlert(any(), eq("Error"), eq("Amount must not exceed N200 000"));
+
+        // Test invalid input length (> 6 characters)
+        controller.amountField.setText("1234567");
+        controller.onSave();
+        verify(Alerts.INSTANCE).jfxAlert(any(), eq("Error"), eq("Amount Field must not exceed six characters"));
+    }
+
+    @Test
+    void testBoundaryValuesForFirstNameField() {
+        // Boundary Value Test: Empty first name
+        controller.firstNameField.setText("");
+        controller.onSave();
+        verify(Alerts.INSTANCE).jfxAlert(any(), eq("Error"), eq("First Name Field cannot be empty"));
+
+        // Boundary Value Test: Valid first name
+        controller.firstNameField.setText("John");
+        controller.onSave();
+        verifyNoInteractions(Alerts.INSTANCE);
+    }
+}
