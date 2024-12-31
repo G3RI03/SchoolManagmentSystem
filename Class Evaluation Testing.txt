@@ -1,0 +1,41 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class StudentGradeTest {
+
+    @Test
+    public void testValidGrades() {
+        // Valid grades, testing each expected valid grade
+        assertTrue(isValidGrade("A"), "Grade A should be valid");  // Covers: return grade.matches("[A-E]")
+        assertTrue(isValidGrade("B"), "Grade B should be valid");  // Covers: return grade.matches("[A-E]")
+        assertTrue(isValidGrade("C"), "Grade C should be valid");  // Covers: return grade.matches("[A-E]")
+        assertTrue(isValidGrade("D"), "Grade D should be valid");  // Covers: return grade.matches("[A-E]")
+        assertTrue(isValidGrade("E"), "Grade E should be valid");  // Covers: return grade.matches("[A-E]")
+    }
+
+    @Test
+    public void testInvalidGrades() {
+        // Invalid grades, testing various invalid inputs
+        assertFalse(isValidGrade("X"), "Grade X should be invalid");  // Covers: return grade.matches("[A-E]")
+        assertFalse(isValidGrade("Y"), "Grade Y should be invalid");  // Covers: return grade.matches("[A-E]")
+        assertFalse(isValidGrade("Z"), "Grade Z should be invalid");  // Covers: return grade.matches("[A-E]")
+        assertFalse(isValidGrade("123"), "Grade 123 should be invalid");  // Covers: return grade.matches("[A-E]")
+    }
+
+    @Test
+    public void testEmptyGrade() {
+        // Test an empty string, which is invalid
+        assertFalse(isValidGrade(""), "Empty grade should be invalid");
+    }
+
+    @Test
+    public void testNullGrade() {
+        // Test null input, which is invalid
+        assertFalse(isValidGrade(null), "Null grade should be invalid");
+    }
+
+    // Method to validate grade
+    private boolean isValidGrade(String grade) {
+        return grade != null && grade.matches("[A-E]");
+    }
+}
